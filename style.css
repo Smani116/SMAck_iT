@@ -1,0 +1,262 @@
+	@import url('https://fonts.googleapis.com/css?family=Acme|Bungee+Inline|Lobster|Permanent+Marker');
+	html{
+		background-image: url('http://orig05.deviantart.net/13e3/f/2013/318/9/2/grungy_blue_texture_by_waitq-d6u7g9q.jpg');
+		background-repeat: repeat;
+		background-position: center center;
+		background-attachment : fixed;
+	}
+	[class*="col-"] {
+		width: 100%;
+		margin: 0;
+		float: left;
+	} 
+	.row::after {
+		content: "";
+		clear: both;
+		display: block;
+	}
+	.center{
+		text-align: center;
+	}
+	header{
+		border: 1px solid gray;
+		background-color: #141414;
+		color: #ffffff;
+		padding: 15px;
+	}
+	.headerTitle{
+		padding-left: 15px;
+		font-family: 'Bungee Inline', cursive;
+		font-size: 10px;
+	}
+	header img{
+		height: 100px;
+		width: 170px;
+	}
+	.titleName{
+		font-size: 13px;
+		text-align: right;
+	}
+	.hide {display: none;}
+	.menu  {display: block;}
+	* {box-sizing: border-box;}
+	
+	.menuBar{
+		height: 25px;
+		background-color: #1bc2a2;
+		cursor: pointer;
+		margin-top: 0px;
+		color: #fff;
+		font-size: 22px;
+		text-align: center;
+	}
+	.menuBar.active, .menuBar:hover {
+		background-color: #2c3e50; 
+	}
+	.accordMenu{
+		display: none;
+		background-color: #1bc2a2;
+	}
+	.accordMenu.show {
+		display: block;
+	}
+	.main{
+		border: 2px solid black;
+		margin-top: 10px;
+		background-color: #9C9A99;
+	} 
+	.main img{
+		width: 150px;
+		height: 180px;
+		border: 1px solid red;
+	}
+	.bio{
+		text-align: left;
+		font-family: 'Lobster', cursive;
+	}
+	.images{
+		border: 2px solid black;
+		margin-top: 10px;
+		background-color: #222E3D;
+		text-align: center;
+	}
+	.images img{
+		height: 160px;
+        width: 150px;
+		display: inline;
+		border-radius: 2em;
+	}
+	.roles{
+		text-align: center;
+		font-family: 'Permanent Marker', cursive;
+		font-size: 25px;
+		background-color: #022F40;
+		padding-bottom: 5px;
+		margin-bottom :10px;
+	}
+	.roles img{
+		width: 150px;
+		height: 180px;
+        border-radius: 50%;
+	}
+	.charcter
+	{
+		font-family: 'Lobster', cursive;
+		font-size: 15px;
+		color: #1798D4;
+		border: 1px solid black;
+        border-radius: 3em;
+		margin: 10px; 
+        background-color: black;
+	}
+	.textStyle{
+		font-size: 25px;
+		text-align: center;
+	}
+	.textStyle2{
+		font-size: 18px;
+		text-align: left;
+		margin-top: 5px;
+		padding:5px;
+	}
+	.awards{
+		background-color: #50514f;
+		text-align: center;
+		font-size: 20px;
+        color: #FFF;
+		font-family: 'Permanent Marker', cursive;
+		
+	}
+	.awardRow{
+		height: 35px;
+		border: 1px solid black;
+		font-size: 13px;
+		font-family: 'Lobster', cursive;
+		font-weight: bold;
+		margin: 5px 0px 5px 5px;
+	}
+	.info{
+		background-color: #f25f5c;
+		text-align: center;
+		font-size: 20px;
+		font-family: 'Permanent Marker', cursive;
+		
+	}
+	.infoRow{
+		height: 35px;
+		border: 1px solid black;
+		font-size: 11px;
+		font-family: Comic Sans MS;
+		font-weight: bold;
+		margin: 5px 5px 5px 0px;	
+	}
+	.linkInfo{
+		text-align: center;
+		background-color: #c39bd3;
+		border: 1px solid black;
+		padding: 5px;
+		font-family: Comic Sans MS;
+		font-size: 15px;
+		margin-top: 10px;
+	}
+	footer{
+		height: 75px;
+		border: 2px solid grey;
+		background-color: #007EA7;
+		font-family: 'Acme', sans-serif;
+		font-size: 15px;
+		text-align: center;
+		margin-top: 10px;
+		padding: 20px;
+		box-shadow: 10px 5px 2px black;
+        color: oldlace;
+	}
+	/* TABLET VIEW */
+	@media screen and (min-width: 768px){
+		body{
+			width: 90%;
+			max-width: 100%;
+			margin: auto;
+		}
+		
+		.tab-hide {display: block;}
+		.desk-hide {display: none;}
+		/* .hide {display: block;} */
+		/* .menu {display: none;} */
+		.col-t-1 {width: 8.33%;}
+		.col-t-2 {width: 16.66%;}
+		.col-t-3 {width: 25%;}
+		.col-t-4 {width: 33.33%;}
+		.col-t-5 {width: 41.66%;}
+		.col-t-6 {width: 50%;}
+		.col-t-7 {width: 58.33%;}
+		.col-t-8 {width: 66.66%;}
+		.col-t-9 {width: 75%;}
+		.col-t-10 {width: 83.33%;}
+		.col-t-11 {width: 91.66%;}
+		.col-t-12 {width: 100%;}
+	}
+	/* DESKTOP VIEW */
+	@media screen and (min-width: 1024px){
+		body{
+			width: 90%;
+			max-width: 100%;
+			margin: auto;
+		}
+		.mar-desk{margin-left: 50px;}
+		/*NAV BAR*/
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			background: #1bc2a2;
+		}
+		ul li {
+			float: left;
+			width:25%;
+		}
+		/* This hides the dropdowns */
+
+		li ul { display: none; }
+
+		ul li a {
+		  display: inline-block;
+		  padding: 1em;
+		  text-decoration: none;
+		  text-align: center;
+		  white-space: nowrap;
+		  color: #fff;
+		}
+
+		ul li a:hover { background: #2c3e50; }
+		/* Display the dropdown */
+		li:hover > ul {
+		  display: block;
+		  position: absolute;
+		}
+
+	
+		.main-navigation li ul li { border-top: 0; }
+		
+		/*NAV BAR*/
+		.roles{margin: 10px 0px 10px 50px;}
+		.tab-hide {display: none;}
+		.desk-hide {display: block}
+		.hide {display: block;}
+		.menu {display: none;}
+		.col-1 {width: 8.33%;}
+		.col-2 {width: 16.66%;}
+		.col-3 {width: 25%;}
+		.col-4 {width: 33.33%;}
+		.col-5 {width: 41.66%;}
+		.col-6 {width: 50%;}
+		.col-7 {width: 58.33%;}
+		.col-8 {width: 66.66%;}
+		.col-9 {width: 75%;}
+		.col-10 {width: 83.33%;}
+		.col-11 {width: 91.66%;}
+		.col-12 {width: 100%;}
+	}
+	
+	
